@@ -26,6 +26,55 @@ exports.config = {
     specs: [
         './test/specs/**/*.js'
     ],
+    suites: {
+        standardUser: [
+            './test/specs/standardUser/loginTest.js',
+            './test/specs/standardUser/inventoryTest.js',
+            './test/specs/standardUser/headerTest.js',
+            './test/specs/standardUser/footerTest.js',
+            './test/specs/standardUser/cartTest.js',
+            './test/specs/standardUser/checkoutStepOneTest.js',
+            './test/specs/standardUser/checkoutStepTwoTest.js',
+            './test/specs/standardUser/checkoutCompleteTest.js'
+
+        ],
+        problemUser: [
+            './test/specs/problemUser/loginTest.js',
+            './test/specs/problemUser/inventoryTest.js',
+            './test/specs/problemUser/headerTest.js',
+            './test/specs/problemUser/footerTest.js',
+            './test/specs/problemUser/cartTest.js',
+            './test/specs/problemUser/checkoutStepOneTest.js',
+            './test/specs/problemUser/checkoutStepTwoTest.js',
+            './test/specs/problemUser/checkoutCompleteTest.js'
+        ],
+        lockedUser: [
+            './test/specs/lockedUser/loginTest.js',
+            './test/specs/lockedUser/inventoryTest.js',
+            './test/specs/lockedUser/headerTest.js',
+            './test/specs/lockedUser/footerTest.js',
+            './test/specs/lockedUser/cartTest.js',
+            './test/specs/lockedUser/checkoutStepOneTest.js',
+            './test/specs/lockedUser/checkoutStepTwoTest.js',
+            './test/specs/lockedUser/checkoutCompleteTest.js'
+        ],
+        performanceGlitchUser: [
+            './test/specs/performanceGlitchUser/loginTest.js',
+            './test/specs/performanceGlitchUser/inventoryTest.js',
+            './test/specs/performanceGlitchUser/headerTest.js',
+            './test/specs/performanceGlitchUser/footerTest.js',
+            './test/specs/performanceGlitchUser/cartTest.js',
+            './test/specs/performanceGlitchUser/checkoutStepOneTest.js',
+            './test/specs/performanceGlitchUser/checkoutStepTwoTest.js',
+            './test/specs/performanceGlitchUser/checkoutCompleteTest.js'
+        ],
+        e2eTests: [
+            './test/specs/e2eTests/e2eTest.standardUser.js',
+            './test/specs/e2eTests/e2eTest.problemUser.js',
+            './test/specs/e2eTests/e2eTest.lockedUser.js',
+            './test/specs/e2eTests/e2eTest.performanceGlitchUser.js'
+        ],
+    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
