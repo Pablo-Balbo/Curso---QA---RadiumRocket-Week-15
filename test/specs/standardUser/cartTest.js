@@ -12,12 +12,12 @@ describe('Test cart page', () => {
     });
 
     it('Check the nonexistence of cart item div', () => {
-            LoginPage.open();
-            LoginPage.standardUserLogin();
-            InventoryPage.shoppingCart.click();
+        LoginPage.open();
+        LoginPage.standardUserLogin();
+        InventoryPage.shoppingCart.click();
 
-            let cartItemDivExisting = CartPage.cartItemDiv.isExisting();
-            expect(cartItemDivExisting).toBe(false);
+        let cartItemDivExisting = CartPage.cartItemDiv.isExisting();
+        expect(cartItemDivExisting).toBe(false);
     });
 
     it('Check cart item div', () => {
