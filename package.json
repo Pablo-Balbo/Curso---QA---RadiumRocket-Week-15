@@ -18,7 +18,8 @@
     "wdio-chromedriver-service": "^7.1.0"
   },
   "scripts": {
-    "test": "npx wdio run ./wdio.conf.js --suite standardUser"
+    "test": "npx wdio run ./wdio.conf.js --suite standardUser",
+    "test-e2e": "npx wdio run ./wdio.conf.js --suite e2eTests"
   },
   "repository": {
     "type": "git",
